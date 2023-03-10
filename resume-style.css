@@ -1,0 +1,90 @@
+.resume-title{
+    font-family: 'Open-Sans';
+    font-size:36px;
+    font-weight: 700;
+    margin: 30px 0 25px 0;
+}
+
+.resume-subtitle{
+    font-family: 'Open-Sans';
+    font-size:21px;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+}
+
+.resume-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-date{
+    color: black;
+    font-family: 'Lato', sans-serif;
+    padding: 2px 5px;
+    font-size:12px;
+    border-radius: 3px;
+    font-weight: 700;
+    background-color: #58C0DE;
+    text-align: right;
+}
+
+.resume-container{
+    display: flex;
+}
+
+.skills{
+    padding: 0;
+    margin-bottom: 36px;
+    list-style-type: none;
+}
+
+.skills-item{
+    margin-bottom: 15px;
+    border:1px solid #f1f1f1;
+    border-radius: 4px;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-bg{
+    padding: 2px 5px;
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photoshop{
+    width: 40%;
+    background: #2ecc71;
+}
+
+.ilustrator{
+    width: 90%;
+    background: orange;
+}
+
+.indesign{
+    width: 65%;
+    background: rgb(234, 89, 234);
+}
+
+.xd{
+    width: 45%;
+    background: yellow;
+}
+
+.sketch{
+    width: 80%;
+    background: rgb(7, 7, 91);
+}
+
+.p{
+    font-family: 'Lato';
+    font-size:16px;
+    margin-top: 25px;
+    margin-bottom: 25px; 
+}
