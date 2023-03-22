@@ -1,2 +1,2 @@
 # Proiect-Tehnici
-Proiectul la tehnici web esdcs
+Proiectul la tehnici web
