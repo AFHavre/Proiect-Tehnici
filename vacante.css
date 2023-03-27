@@ -80,7 +80,7 @@ p {
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 20px;
 }
 
