@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px #000001;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav_content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_item {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #0077ff;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+img {
+  inset: 0;
+  position: absolute;
+}
+
+.new-york {
+  color: #000000;
+  font-size: 22px;
+  height: 80%;
+  width: 60%;
+  background-size: cover;
+  background-image: url('https://www.fotoprinter.ro/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/e/new-york-city-skyline.jpg');
+}
+
+.paris {
+  color: #000001;
+  font-size: 22px;
+  height: 100%;
+  width: 60%;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/originals/9e/92/17/9e9217358d798224e712f014e72ce82b.jpg');
+}
+
+.barcelona {
+  color: #000002;
+  font-size: 22px;
+  height: 100%;
+  width: 60%;
+  background-size: cover;
+  background-image: url('https://w0.peakpx.com/wallpaper/126/293/HD-wallpaper-barcelona-sunset-cityscapes-spanish-cities-spain-modern-buildings-barcelona-skyline-cities-of-spain.jpg');
+}
+
+.destinatii {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.plan {
+  background: linear-gradient(to right, white, skyblue);
+}
+
+.despre_noi {
+  background: linear-gradient(white, skyblue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.detalii {
+  font-size: 20px;
+  color: #000000;
+}
+
+input[type='date'],
+select {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.buton {
+  background-color: #0077ff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.buton:hover {
+  background-color: #0066cc;
+}
+
+.footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+  background: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+@media (max-width: 990px) {
+  .nav_item {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: none;
+  }
+  .new-york {
+    background-image: none;
+  }
+  .paris {
+    background-image: none;
+  }
+  .barcelona {
+    background-image: none;
+  }
+  .footer {
+    margin-top: 3px;
+  }
+}
