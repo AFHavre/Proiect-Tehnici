@@ -75,6 +75,7 @@ h2 {
 
 p {
   line-height: 1.5;
+  text-indent: 30px;
 }
 
 form {
@@ -179,15 +180,15 @@ select {
     display: flex;
     justify-content: space-around;
   }
-  .footer {
-    border-radius: 0;
+  .plan {
+    background: none;
+  }
+  .despre_noi{
+    background: none;
   }
 }
 
 @media (max-width: 768px) {
-  body {
-    background: none;
-  }
   .new-york {
     background-image: none;
   }
@@ -196,8 +197,5 @@ select {
   }
   .barcelona {
     background-image: none;
-  }
-  .footer {
-    margin-top: 3px;
   }
 }
