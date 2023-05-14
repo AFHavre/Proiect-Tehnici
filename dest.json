@@ -1,0 +1,19 @@
+{
+  "destinations": [
+    {
+      "id": 2,
+      "name": "Tokyo, Japonia",
+      "description": "Tokyo este cunoscut pentru tehnologie, cultura pop și multe altele."
+    },
+    {
+      "name": "New York City",
+      "description": "ceva",
+      "id": 4
+    },
+    {
+      "name": "New York City",
+      "description": "undefined",
+      "id": 5
+    }
+  ]
+}

@@ -178,7 +178,7 @@ select {
 @media (max-width: 990px) {
   .nav_item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .plan {
     background: none;

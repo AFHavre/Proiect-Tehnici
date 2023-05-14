@@ -24,18 +24,17 @@
         <form class="destinatii">
           <label>Destinatii:</label>
           <select>
-            <option value="new-york">New York City</option>
-            <option value="paris">Paris</option>
-            <option value="barcelona">Barcelona</option>
+            <option id="name" value="new-york-city">New York City</option>
+            <option id="name" value="paris">Paris</option>
+            <option id="name" value="barcelona">Barcelona</option>
           </select>
+          <input id="desc" placeholder="Descriere">
+          <button id="AddDest" onclick="addDest()">Search</button>
+          <button id="EditDest" onclick="editDest()"> Edit </button>
 
-          <label>Check-in:</label>
-          <input type="date" id="check-in" />
-
-          <label>Check-out:</label>
-          <input type="date" id="check-out" />
-
-          <button type="submit" class="buton">Search</button>
+          <hr>
+          <div id="content"></div>
+          <script src="func.js"></script>
         </form>
       </section>
     </main>
