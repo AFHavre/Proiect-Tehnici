@@ -7,13 +7,18 @@
     },
     {
       "name": "New York City",
-      "description": "ceva",
-      "id": 4
+      "description": "undefined",
+      "id": 5
     },
     {
       "name": "New York City",
+      "description": "ceva",
+      "id": 7
+    },
+    {
+      "name": "Paris",
       "description": "undefined",
-      "id": 5
+      "id": 8
     }
   ]
 }

@@ -18,9 +18,7 @@ function fetchDest() {
 				const button = document.createElement("button");
 				button.innerText = "Edit";
 				button.onclick = function() {
-					document.getElementById("name").innerText = data[i].name;
-					document.getElementById("desc").value = data[i].description;
-					descId = data[i].id;
+					editDest(data[i].id)
 				}
 				
 				content.appendChild(button);
@@ -41,7 +39,7 @@ function fetchDest() {
 }
 
 function addDest() {
-	const name = document.getElementById("name").innerText;
+	const name = document.getElementById("name").value;
 	const desc = document.getElementById("desc").value;
 
 	if (!name || !desc) {
@@ -65,8 +63,8 @@ function addDest() {
 }
 
 
-function editDest() {
-	const name = document.getElementById("name").innerText;
+function editDest(id) {
+	const name = document.getElementById("name").value;
 	const desc = document.getElementById("desc").value;
 	if (!name || !desc) {
 		alert("Invalid data!");
@@ -74,7 +72,7 @@ function editDest() {
 	}
 	const newDest = { name: name, description: desc };
 
-	fetch("http://localhost:3000/destinations/"+descId, 
+	fetch("http://localhost:3000/destinations/"+id, 
 		  {method: 'put', 
 		   headers: 
 		   {
