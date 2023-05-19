@@ -6,19 +6,10 @@
       "description": "Tokyo este cunoscut pentru tehnologie, cultura pop și multe altele."
     },
     {
-      "name": "New York City",
+      "name": "Barcelona, Spania",
+      "hotel": "Centrul orasului",
       "description": "undefined",
-      "id": 5
-    },
-    {
-      "name": "New York City",
-      "description": "ceva",
-      "id": 7
-    },
-    {
-      "name": "Paris",
-      "description": "undefined",
-      "id": 8
+      "id": 4
     }
   ]
 }

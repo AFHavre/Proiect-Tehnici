@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="vacante.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Plan</title>
   </head>
   <body class="plan">
@@ -12,30 +16,60 @@
       <nav>
         <ul class="nav_content">
           <li class="nav_item"><a href="destinatii.html">Destinatii</a></li>
-          <li class="nav_item"><a href="plan.html">Planuieste-ti vacanta</a></li>
+          <li class="nav_item">
+            <a href="plan.html">Planuieste-ti vacanta</a>
+          </li>
           <li class="nav_item"><a href="despre_noi.html">Despre noi</a></li>
         </ul>
       </nav>
+      <button class="login" onclick="openLoginModal()">
+        <i class="fa fa-user" aria-hidden="false"></i>
+      </button>
     </header>
 
     <main>
       <section>
-        <h1>Pregateste-ti calatoria</h1>
+        <h1>Planuieste-ti calatoriile</h1>
         <form class="destinatii">
           <label>Destinatii:</label>
           <select id="name">
-            <option value="New York City">New York City</option>
-            <option value="Paris">Paris</option>
-            <option value="Barcelona">Barcelona</option>
+            <option value="New York City, SUA">New York City</option>
+            <option value="Paris, Franta">Paris</option>
+            <option value="Barcelona, Spania">Barcelona</option>
           </select>
-          <input id="desc" placeholder="Descriere">
+          <label>Unde doresti sa fie hotelul:</label>
+          <select id="hotel">
+            <option value="Centrul orasului">Centrul orasului</option>
+            <option value="In oras">In oras</option>
+            <option value="Inafara orasului">Inafara orasului</option>
+          </select>
+          <input id="desc" placeholder="Notite" />
           <button id="AddDest" onclick="addDest()">Search</button>
-          <hr>
+          <hr />
+          <br />
           <div id="content"></div>
           <script src="func.js"></script>
         </form>
       </section>
     </main>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeLoginModal()">&times;</span>
+        <h2>Autentificare</h2>
+        <form id="loginForm">
+          <label for="username">Nume utilizator:</label>
+          <input type="text" id="username" required />
+
+          <label for="password">Parolă:</label>
+          <input type="password" id="password" required />
+
+          <button type="submit">Autentificare</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
 
     <footer class="footer">
       <p>
