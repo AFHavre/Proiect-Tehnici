@@ -30,7 +30,7 @@
     <main>
       <section>
         <h1>Planuieste-ti calatoriile</h1>
-        <form class="destinatii">
+        <form id="destinatii">
           <label>Destinatii:</label>
           <select id="name">
             <option value="New York City, SUA">New York City</option>
@@ -45,31 +45,33 @@
           </select>
           <input id="desc" placeholder="Notite" />
           <button id="AddDest" onclick="addDest()">Search</button>
-          <hr />
-          <br />
           <div id="content"></div>
           <script src="func.js"></script>
         </form>
       </section>
     </main>
-
+    
     <div id="loginModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeLoginModal()">&times;</span>
         <h2>Autentificare</h2>
         <form id="loginForm">
-          <label for="username">Nume utilizator:</label>
-          <input type="text" id="username" required />
-
-          <label for="password">Parolă:</label>
-          <input type="password" id="password" required />
-
+          <p>
+            <label for="username">Nume utilizator:</label>
+            <input type="text" id="username" required />
+            </p>
+            <br>
+            <p>
+            <label for="password">Parolă:</label>
+            <input type="password" id="password" required />
+          </p>
           <button type="submit">Autentificare</button>
         </form>
       </div>
     </div>
 
     <script src="login.js"></script>
+    <script src="funcfornode.js"></script>
 
     <footer class="footer">
       <p>

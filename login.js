@@ -15,10 +15,27 @@ loginForm.addEventListener('submit', function (event) {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
-    if (username === 'utilizator' && password === 'parola') {
-        alert('Autentificare reușită!');
-        closeLoginModal();
-    } else {
-        alert('Date de autentificare incorecte!');
-    }
+    let newDest={
+        id: username,
+        password: password
+    };
+    fetch("http://localhost:3000/login", 
+    {method: 'post', 
+     headers: 
+     {
+         'Content-Type' : 'application/json'
+     },
+     body:  JSON.stringify(newDest)
+    }).then(function(response){
+        console.log(response); 
+        if( response.status == 200) { 
+            alert('user valid');
+        }
+        if( response.status == 450) {
+            alert('user invalid');
+        }
+        if( response.status != 200 && response.status != 450) {
+            alert(`response error : ${response.status}`);
+        }
+    });
 });

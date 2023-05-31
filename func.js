@@ -74,7 +74,8 @@ function addDest() {
 		   body: JSON.stringify(newDest)
 		  }).then(function(response)
 				  {
-					console.log(response); window.location.reload();}
+					console.log(response); 
+					window.location.reload();}
 				  );
 }
 
@@ -100,7 +101,8 @@ function editDest(id) {
 		   body: JSON.stringify(newDest)
 		  }).then(function(response)
 				  {
-					console.log(response); window.location.reload();}
+					console.log(response); 
+					window.location.reload();}
 				  );
 	
 }
@@ -110,7 +112,8 @@ function deleteDest(id) {
 		  {method: 'delete', 
 		  }).then(function(response)
 				  {
-					console.log(response); window.location.reload();}
+					console.log(response); 
+					window.location.reload();}
 				  );
 }
 

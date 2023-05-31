@@ -1,15 +1,16 @@
 {
-  "destinations": [
-    {
-      "id": 2,
-      "name": "Tokyo, Japonia",
-      "description": "Tokyo este cunoscut pentru tehnologie, cultura pop și multe altele."
-    },
-    {
-      "name": "Barcelona, Spania",
-      "hotel": "Centrul orasului",
-      "description": "undefined",
-      "id": 4
-    }
-  ]
+    "destinations": [
+        {
+            "name": "New York City, SUA",
+            "hotel": "Centrul orasului",
+            "description": "ceva",
+            "id": 1
+        }
+    ],
+    "users": [
+        {
+            "id": "aaa@a.com",
+            "password": "aaaa"
+        }
+    ]
 }
